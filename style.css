@@ -1,0 +1,273 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+html { 
+  background: url(ales4.jpg) no-repeat center fixed; 
+  -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+  background-size: cover; /* version standardisée */
+}
+
+#corp {
+
+}
+body{
+  height: auto;
+  width: auto;
+  font-family: sans-serif;
+}
+
+#blackscreen {
+	position: fixed;
+	height: 89%;
+	width: 100%;
+	background-color: black;
+	z-index: 3;
+	display: none;
+}
+
+/* Ici les cadres des icônes de bureau*/
+
+#icone1{ 
+	width: 50px;
+	height: 50px;
+	border-width: 3px;
+	border-style: outset;
+	border-color: black;
+	background-color: #F2F2F2;
+	position: absolute;
+	top:30px;
+	left:10px;
+ }
+
+#icone2{ 
+	width: 50px;
+	height: 50px;
+	border-width: 3px;
+	border-style: outset;
+	border-color: black;
+	background-color: #F2F2F2;
+	position: absolute;
+	top:110px;
+	left:10px;
+ }
+
+ #icone3{ 
+	width: 50px;
+	height: 50px;
+	border-width: 3px;
+	border-style: outset;
+	border-color: black;
+	background-color: #F2F2F2;
+	position: absolute;
+	top:190px;
+	left:10px;
+ }
+
+ #icone4{ 
+	width: 50px;
+	height: 50px;
+	border-width: 3px;
+	border-style: outset;
+	border-color: black;
+	background-color: #F2F2F2;
+	position: absolute;
+	top:800px;
+	left:1750px;
+ }
+
+/* On delimite la boite "fenetre" */
+#page1 {
+	width: 30em;
+	height: 20em;
+	border-width: 3px;
+	border-style: outset;
+	border-color: black;
+	background-color: #F2F2F2;
+	transform: translateZ(200px);
+	position: absolute;
+	top:100px;
+	left:900px;
+
+}
+#page2 {
+	width: 30em;
+	height: 20em;
+	border-width: 3px;
+	border-style: outset;
+	border-color: black;
+	background-color: #F2F2F2;
+	transform: translateZ(200px);
+	position: absolute;
+	top:100px;
+	left:900px;
+
+}
+#page3 {
+	width: 30em;
+	height: 20em;
+	border-width: 3px;
+	border-style: outset;
+	border-color: black;
+	background-color: #F2F2F2;
+	transform: translateZ(200px);
+	position: absolute;
+	top:100px;
+	left:900px;
+
+}
+#page4 {
+	width: 30em;
+	height: 20em;
+	border-width: 3px;
+	border-style: outset;
+	border-color: black;
+	background-color: #F2F2F2;
+	transform: translateZ(200px);
+	position: absolute;
+	top:100px;
+	left:900px;
+
+}
+
+
+
+/*Barre de nav à la windows avec menu réroulant, programe "dejà ouvert" */
+#navWin {
+	background-color: grey;
+	z-index: 1;
+	
+
+}
+
+.menu{
+	
+
+}
+
+#md{
+	position: absolute;
+	height: 50px;
+	width: 100%;
+	bottom: 100px;
+	background-color: grey;
+}
+
+
+/* Footer avec logos réseaus sociaux, logos partenaires et copyright*/
+footer {
+
+   position: absolute;
+   bottom: 0;
+   height: 100px;
+   width: 100%;
+   color:white;
+   background-color: #222;
+   border-bottom: 10px black ridge;
+}
+#button{
+	float: right;
+	margin-top: 7px;
+	margin-right: 40px;
+	width: 50px;
+    background-color: #222;
+    border: none;   
+}
+
+#logo{
+    background-color: #222;
+    width: 100px;
+}
+#logo1{
+    width: 100px;
+}
+    
+}
+/* Texte défilant */
+
+.defileParent { 
+	display: block;
+	margin: 3em;
+	overflow: hidden;
+	position: absolute;bottom: -3em;
+	table-layout: fixed;
+	width: 800px;
+	top:1360px;
+	left:450px;
+}
+
+
+
+.defile {
+	display:block;
+	-webkit-animation:linear marqueelike 20s infinite ;
+	-moz-animation:linear marqueelike 20s infinite ;
+	-o-animation:linear marqueelike 20s infinite ;
+	-ms-animation:linear marqueelike 20s infinite ;
+	animation:linear marqueelike 20s infinite ;
+	margin-left:-100%;
+	padding:0 5px;
+	text-align:left;
+	height:30px;
+}
+
+
+.defile:after {
+	content:attr(data-text);
+	position:absolute;
+	white-space:nowrap;
+	padding-left:10px;
+	
+}
+
+
+
+@-webkit-keyframes marqueelike {
+	0%, 100% {margin-left:0;}
+	99.99% {margin-left:-75%;}
+ }
+@-moz-keyframes marqueelike {
+	0%, 100% {margin-left:0;}
+	99.99% {margin-left:-75%;}
+ }
+@-o-keyframes marqueelike {
+	0%, 100% {margin-left:0;}
+	99.99% {margin-left:-75%;}
+ }
+@-ms-keyframes marqueelike {
+	0%, 100% {margin-left:0;}
+	99.99% {margin-left:-75%;}
+ }
+@keyframes marqueelike {
+	0%, 100% {margin-left:0;}
+	99.99% {margin-left:-75%;}
+ }
+
+#liste {
+	position: absolute;
+	z-index: 1;
+	bottom: 50px;
+	width: 320px;
+	height: 200px;
+	background-color: white;
+}
+
+button {
+	background-color: grey;
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+
+button:active {
+	background: url("menu.jpg");
+	transform: translateY(4px)
+	box-shadow: 0 5px #666;
+}
+
+.one:hover {
+	background-color: grey;
+}
+
